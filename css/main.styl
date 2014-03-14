@@ -1,0 +1,689 @@
+/* ==========================================================================
+   Author @ivanmarelli
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+   background-image url('../img/az_subtle.png');
+    color #004594
+    font-size: 1em;
+    font-family 'Open Sans', sans-serif
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img { 
+    opacity: 1; 
+  
+    /*Transition*/ 
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+} 
+
+img:hover {   
+   opacity: 0.5; 
+}
+
+a:hover {
+  text-decoration none
+}
+
+h1 {
+  font-size 22px
+  color #1762AD
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.navbar-toggle {
+  background-color #6194C1
+ }
+
+.btn-primary {
+    background-color #004594
+    border-color #004594
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #1762AD;
+  border-color: #1762AD;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 1%;
+}
+.row-fluid [class*="span"] {
+ margin-left: 1%;
+}
+
+#producto {
+  background #fff
+}
+
+.thumbnail {
+  margin-top 5px
+  border: none
+  border-radius 0
+
+}
+
+.bottom-thumbnail {
+  width 100%
+  height 15px
+  margin 0 auto
+  padding-top 8px
+}
+
+.thumbnail .caption {
+  padding 0
+  font-size 14px
+}
+
+.thumbnail p {
+  margin 0
+  padding 0
+}
+
+.thumbnail .caption a h3, #producto .caption  a h3 {
+ 
+  
+  -webkit-transition: all 0.5s ease; 
+  -moz-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease; 
+  padding 10px
+}
+
+.thumbnail .caption a h3  {
+  background #1762AD
+  color #fff
+  margin 0  
+  line-height normal
+}
+.thumbnail .caption h3:hover {
+    background #004594
+    color #fff
+}
+
+
+#producto .caption  a h3, #producto .caption  h3 {
+  background #EBEBEB
+  color #323232  
+  line-height normal  
+  padding 10px  
+  margin 6px 0
+}
+
+#producto .caption a h3:hover {
+  background #428bca
+  color #fff
+}
+
+#table-producto {
+  background #fff
+  margin 0
+  padding 0
+}
+
+.table {
+  color #323232
+  font-family 'Open Sans', sans-serif
+  font-size 14px
+  line-height normal
+  margin-bottom: 0px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding 6px
+  line-height 1
+  border-top 1px solid #86C7E0
+}
+
+.titulo-table {
+  font-family 'Open Sans', sans-serif
+  font-style italic
+  font-weight bold
+  font-size 14px
+  color #000
+}
+.div-productos {
+  background #D2E8FF
+  padding 10px
+}
+
+// 
+
+#info {
+  background #fff
+}
+
+#info h1 {
+  background #D2E8FF
+  color #323232
+  padding 10px
+  font-size 18px
+}
+#info p {
+  font-size 14px
+  color #323232
+}
+
+
+.radio, .checkbox {
+    color #505050
+    font-weight 400
+}
+
+.form-signin {
+  max-width: 322px;
+  padding-top 40px
+  margin: 10px auto;
+
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px
+  margin-top: 10px
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-style italic
+  font-size 0.9em  
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-style italic
+  font-size 0.9em
+
+}
+.form-signin input[type="submit"] {
+  background url('../img/btn-ingresar.png') no-repeat center
+  border none
+  color #fff
+  font-style bold
+  font-size 1em
+  margin 5px
+  width 160px
+  height 40px
+  padding 0
+}
+
+
+.login-home {
+  font-size 1em  
+  margin-bottom 20px
+}
+
+.home-header {
+  max-width 1170px
+  height 145px
+  margin 0 auto
+}
+/*
+.home-header img {
+  padding-top 45px
+  padding-bottom 5px
+}
+*/
+
+.home-header .logo-header {
+  margin-left 30px
+}
+
+.welcome {
+  color #fff
+  font-style italic
+  float left
+  margin 0 10px 0 0
+
+}
+.logout {
+  margin 0 5px
+}
+
+.glyphicon-search {
+  color #6194C1
+}
+
+.top-seccion {
+  background #00317A
+  width 100%
+  max-height 47px
+  padding-top 5px
+}
+
+header {
+    margin 0
+    padding 0
+    background #004594
+}
+
+
+footer  {
+    background #fff
+    padding 30px 0
+}
+.footer {
+    max-width 960px
+}
+
+.footer img {
+
+  filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+  filter: Gray(); /* IE4-8 and 9 */
+
+
+  transition: all 0.5s ease;
+}
+.footer img:hover { 
+  opacity 1
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.form-control-search {
+  background-color #6194C1
+  background-image none
+  border none
+  border-radius 0
+  color #ffffff
+  height 16px
+  font-size: 14px;
+  width auto
+  padding 6px
+}
+
+.form-control-search::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.form-control-search:-ms-input-placeholder {
+  color: #fff;
+}
+.form-control-search::-webkit-input-placeholder {
+  color: #fff;
+}
+
+ 
+.form-control {
+  background-color #6194C1
+  background-image none
+  border none
+  border-radius 0
+  color #ffffff
+  height 22px
+  font-size: 14px;
+}
+
+.form-control::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #fff;
+}
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.img-nav {
+  margin 0 auto
+}
+
+ul .nav-pills  {
+  margin 0
+  padding 0
+}
+
+.nav-pills > li {
+  float: left;
+  height 95px
+  width 115px
+}
+.nav-pills > li > a {
+    font-family 'Open Sans', sans-serif
+    line-height normal
+
+
+  border-radius 0
+}
+.nav-pills img{
+  padding-top 0
+  padding-bottom 0
+}
+
+.nav-pills > li > p {
+  margin 0
+  padding 0
+}
+
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color #fff
+  background-color #00317A
+}
+dl, menu, ol, ul {
+  margin 0
+}
+
+.scroll-top {
+    width 40px
+    height 40px
+    opacity 0.3
+    position fixed
+    bottom 50px
+    right 30px
+    display none /* Estara oculto por defecto */
+    text-indent -9999px; /* Oculta el texto del enlace */
+    z-index 1000 /* Evita que otros elementos esten por encima */
+    background url('../img/arriba.png') no-repeat
+}
+
+.scroll-top:hover {
+    opacity 0.8
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all; 
+    transition: 0.3s all;
+}
+
+.nav-tabs {
+  border-bottom none
+}
+.nav-tabs > li {
+  max-width 160px
+  border-right: 1px solid #A5A5A5;
+}
+.nav-tabs > li > a {
+  color #A5A5A5
+  border-radius none
+  text-align center
+  font-size 14px
+  font-weight bold
+}
+.nav-tabs > li > a:hover {
+  border-color transparent
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1762AD;
+  cursor: default;
+  background-color transparent
+  border none
+  border-bottom-color transparent
+}
+
+
+.limpiar {
+  clear both
+}
+
+.breadcrumb {
+  background-color transparent
+  color #000
+}
+.breadcrumb a,  .breadcrumb span {
+  color #004594
+}
+
+.breadcrumb a:hover, .breadcrumb a:active {
+  color #000
+}
+
+
+#info .titulo-categoria h1 {
+  background transparent
+  font-size 2em
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.home-header {
+  height auto
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
