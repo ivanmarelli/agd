@@ -126,8 +126,8 @@
     </header> <!-- /header -->
 
 <?php  
-       wp_redirect( home_url('/productos') );
-//       exit;
+ //      wp_redirect( home_url('/productos') );
+       exit;
    }
      
 ?>
