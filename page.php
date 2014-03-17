@@ -1,5 +1,8 @@
+<?php 
+	if ( is_user_logged_in() ) { 
+ ?>
 
-<?php get_header (); ?>
+ <?php get_header (); ?>
 
 <div class="container" >
 <br>
@@ -23,4 +26,13 @@
 </div> <!-- /container -->
 
 <?php get_footer (); ?>
+
+<?php 
+	} else {
+
+	get_template_part ('login');
+
+}
+
+?>
 

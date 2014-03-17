@@ -2,9 +2,11 @@
 /*
 Template Name: login
 */
+
 ?>
 
-<?php get_header (); ?>
+<?php get_header ();  ?>
+  
 
     <div class="container">
      
@@ -30,7 +32,9 @@ Template Name: login
             </div>
 
         </form>
-
+      </div> <!-- /login-form -->
+    
     </div> <!-- /container -->
+
 
 <?php get_footer (); ?>

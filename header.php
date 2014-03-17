@@ -30,21 +30,14 @@
 
   <?php 
 
-    if ( !is_user_logged_in() ) { 
+    if ( is_user_logged_in() ) { 
      
-       wp_redirect( home_url('/') ); 
-      
-
-     } else { 
-       
        global $current_user;
        get_currentuserinfo();
 
        $nombreUsuario = $current_user->display_name . "\n";
        $avatarUsuario = get_avatar($current_user->ID, 25); 
 
-//       wp_redirect( home_url('/productos') );
-//       exit;
     ?>
 
     <div class="container top-seccion">
@@ -69,7 +62,7 @@
                 <p class="welcome"> <?php // echo $avatarUsuario; ?> 
                   <span class="glyphicon glyphicon-user"></span> Bienvenido <strong><?php echo $nombreUsuario  ?>,</strong>
                 </p>
-                <a href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ) ?>" class="logout" >
+                <a href="<?php echo wp_logout_url( home_url() ) ?>" class="logout" >
                   <span class="glyphicon glyphicon-log-out"> Logout | </span>
                 </a>
               </div><!-- /.form-group -->
@@ -126,8 +119,18 @@
     </header> <!-- /header -->
 
 <?php  
- //      wp_redirect( home_url('/productos') );
-       exit;
-   }
-     
+
+   } else {
+
+?>
+    <header>
+        <div class="home-header">
+            <a href=""><img src="<?php echo IMAGES ?>/logo-agd.png" alt="" class="img-responsive" style="margin: 0 auto;"></a>
+        </div>
+    </header>
+
+<?php 
+
+  } 
+  
 ?>

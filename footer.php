@@ -4,19 +4,19 @@
     <footer>
         <div class="container footer">
             <div class="row-fluid">
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-agd.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura-marca.jpg" alt="" class="img-responsive"></a></div>              
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura-oliva.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-cada-dia.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-familiar.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-mayoliva.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-mazola.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-sojola.jpg" alt="" class="img-responsive"></a></div>
-<!--               <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php // echo IMAGES; ?>/logo-copisi.jpg" alt="" class="img-responsive"></a></div> -->
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura-ketchup.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura-mostaza.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href=""><img src="<?php echo IMAGES; ?>/logo-natura-salsa-golf.jpg" alt="" class="img-responsive"></a></div>              
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-agd.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-marca.jpg" alt="" class="img-responsive"></a></div>              
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-oliva.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-cada-dia.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-familiar.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-mayoliva.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-mazola.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-sojola.jpg" alt="" class="img-responsive"></a></div>
+<!--               <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php // echo IMAGES; ?>/logo-copisi.jpg" alt="" class="img-responsive"></a></div> -->
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-ketchup.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-mostaza.jpg" alt="" class="img-responsive"></a></div>
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-salsa-golf.jpg" alt="" class="img-responsive"></a></div>              
 
             </div>
     </footer>

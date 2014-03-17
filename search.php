@@ -1,3 +1,7 @@
+<?php 
+	if ( is_user_logged_in() ) { 
+ ?>
+
 <?php get_header(); ?>
 
 <div class="container">
@@ -22,7 +26,12 @@
 
 <?php get_footer(); ?>
 
+<?php 
 
+	} else {
 
+	redirigirAlogin();
 
+}
 
+?>

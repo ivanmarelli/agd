@@ -1,4 +1,8 @@
-<?php get_header (); ?>
+<?php 
+	if ( is_user_logged_in() ) { 
+ ?>
+
+<?php get_header ();  ?>
 
 <div class="container">
 <br>
@@ -37,6 +41,15 @@
 </div>  <!-- /fin container -->
 
 <?php get_footer (); ?>
+
+<?php 
+	} else {
+
+	redirigirAlogin();
+
+}
+
+?>
 
 
 

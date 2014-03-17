@@ -281,11 +281,10 @@ function custom_login_redirect($redirect_to, $request, $user) {
     if ( isset( $user->roles ) && is_array( $user->roles ) ) {
      
         if ( in_array( 'administrator', $user->roles ) )
-//            return home_url( '/wp-admin/edit.php' );
-//            wp_redirect( home_url('/wp-admin/edit.php') );
-            wp_redirect( home_url('/productos') );
+            wp_redirect( home_url('/wp-admin/edit.php') );
+//            wp_redirect( home_url('/productos') );
 
-        elseif ( in_array( 'editor', $user->roles ) )
+        elseif ( in_array( 'editor', $user->roles  ) )
             wp_redirect( home_url('/productos') );            
 
         elseif ( in_array( 'suscriptor', $user->roles ) )
@@ -372,6 +371,25 @@ add_shortcode('inicioTitulo', 'shortcode_inicio_titulo_fila');
 add_shortcode('finTitulo', 'shortcode_fin_titulo_fila');
 add_shortcode('inicioValor', 'shortcode_inicio_valor_fila');
 add_shortcode('finValor', 'shortcode_fin_valor_fila');
+
+
+add_shortcode('redirigir', 'redirigirUsuario');
+
+function redirigirUsuario() {
+    if ( is_user_logged_in() ) {
+        wp_redirect( home_url('/productos') );
+    } else {
+        wp_redirect( home_url('/login') );
+    }
+}
+
+
+function redirigirAproductos() {
+    wp_redirect( home_url('/productos') );
+}
+function redirigirAlogin() {
+    wp_redirect( home_url('/login') );
+}
 
 
 ?>
