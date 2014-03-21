@@ -11,7 +11,7 @@
       
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+      <title><?php wp_title( '|', true, 'right' ); ?></title>
 
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />

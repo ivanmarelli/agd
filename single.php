@@ -18,11 +18,17 @@
 
                 <div class="row" id="table-producto">
                       <div class="col-md-3">
-                         <?php if ( has_post_thumbnail()) :  ?>
+                          <?php 
+                                if ( has_post_thumbnail()) : 
+                                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(500,400), false, '' );
+                                $imagenGrande = $src[0];
+                           ?>
                               <figure>
-<!--                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> -->
+                                 <a href=" <?php echo $imagenGrande; ?>"  title="<?php the_title(); ?>" data-type="image" data-toggle="lightbox" data-title="<?php the_title(); ?>" data-footer="<p class='text-right'><img src='<?php echo IMAGES ?>/logo-agd.jpg'  ></p>">  
+
+
                                   <?php the_post_thumbnail(array(250,180),array('class' => 'img-responsive')); ?>
-<!--                                 </a> -->
+                                 </a>
                               </figure>
                           <?php endif; ?>    <!-- /post thumbnail -->                  
                       </div>

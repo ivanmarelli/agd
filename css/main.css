@@ -84,6 +84,7 @@ dl,menu,ol,ul{margin:0}
 .breadcrumb a,.breadcrumb span{color:#004594}
 .breadcrumb a:hover,.breadcrumb a:active{color:#000}
 #info .titulo-categoria h1{background:transparent;font-size:2em}
+.modal-title{font-size:1.6em}
 @media only screen and (min-width: 35em){}@media print,(-o-min-device-pixel-ratio: 5/4),(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){}.home-header{height:auto}
 .ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}
 .ir:before{content:"";display:block;width:0;height:150%}

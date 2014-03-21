@@ -206,8 +206,7 @@ function functions_slide_indicator($post) {
 }
 
 
-function im_breadcrumb() 
-{
+function im_breadcrumb()  {
     if (!is_home()) 
     {
         echo '<ul class="breadcrumb">';
@@ -215,7 +214,6 @@ function im_breadcrumb()
         echo get_option('home');
         echo '">';
         echo "Inicio";
-//        bloginfo('name');
         echo '</a><span class="divider"> &raquo; </span></li>';
         if (is_category() || is_single()) 
             {
@@ -235,8 +233,7 @@ function im_breadcrumb()
     }
 }
 
-function im_category_breadcrumb() 
-{
+function im_category_breadcrumb() {
     if (!is_home()) 
     {
         echo '<ul class="breadcrumb">';
@@ -244,27 +241,19 @@ function im_category_breadcrumb()
         echo get_option('home');
         echo '">';
         echo "Productos";
-//        bloginfo('name');
         echo '</a><span class="divider"> &raquo; </span> </li>';
           $category         =    get_the_category(); 
           $categoryName     =    $category[0]->cat_name;
-//          $categoryLink     =    get_category_link( $category->term_id);
 
-        if (is_category() || is_single()) 
-            {
-//            the_category(' <span> &raquo; </span> ');
-//        echo '<li><a href="';
-//        echo $categoryLink;
-//        echo '">';                
-            echo " ".$categoryName;
-//        echo '</a>';
+        if (is_category() || is_single()) {
+           echo " ".$categoryName;
         }
         echo '</ul>';
     }
 }
 
 
-
+// Personalizar imagen de login
 function custom_login_logo() {
         echo '<style type="text/css">
         h1 a { background-image: url('.IMAGES.'/logo-admin.png) !important; }
@@ -272,9 +261,6 @@ function custom_login_logo() {
 }
 add_action('login_head', 'custom_login_logo');
 
-function irAlHome () {
-    return home_url();
-}
 
 function custom_login_redirect($redirect_to, $request, $user) {
     global $user;
@@ -299,10 +285,10 @@ function custom_login_redirect($redirect_to, $request, $user) {
 }
 add_filter( 'login_redirect', 'custom_login_redirect', 10, 3 );
 
-
+// Incluir selección de categorias en Page
 function add_pages_meta_boxes() {
-add_meta_box(   'tagsdiv-post_tag', __('Page Tags'), 'post_tags_meta_box', 'page', 'normal', 'default');
-add_meta_box(   'categorydiv', __('Categories'), 'post_categories_meta_box', 'page', 'normal', 'default');
+    add_meta_box(   'tagsdiv-post_tag', __('Page Tags'), 'post_tags_meta_box', 'page', 'normal', 'default');
+    add_meta_box(   'categorydiv', __('Categories'), 'post_categories_meta_box', 'page', 'normal', 'default');
 }
 add_action('add_meta_boxes', 'add_pages_meta_boxes');
 
@@ -311,8 +297,9 @@ function attach_category_to_page() {
 }
 add_action('init','attach_category_to_page');
 
-function buscador_mostrar_solo_posts($query)
-{
+
+//  Método para que el buscador solo funciona para resultados en post
+function buscador_mostrar_solo_posts($query) {
     if ($query->is_search)
     {
         $query->set('post_type', 'post');
@@ -321,6 +308,18 @@ function buscador_mostrar_solo_posts($query)
 }
 add_filter('pre_get_posts', 'buscador_mostrar_solo_posts');
 
+
+
+//  shortcode Page
+function shortcode_inicio_columna() {
+    return '<div class="col-md-6">';
+}
+add_shortcode('inicioColumna', 'shortcode_inicio_columna');
+
+function shortcode_fin_columna() {
+    return '</div> <!-- /col-md-6 -->';
+}
+add_shortcode('finColumna', 'shortcode_fin_columna');
 
 function shortcode_inicio_tablas_post() {
     return '<div class="col-md-6">
@@ -332,48 +331,49 @@ function shortcode_inicio_tablas_post() {
                     </colgroup>
                     <tbody>';
 }
+add_shortcode('inicioTabla', 'shortcode_inicio_tablas_post');
 function shortcode_fin_tablas_post() {
     return '     </tbody> 
                 </table> <!-- /table -->
               </div> <!-- /table-responsive -->
            </div> <!-- /col-md-6 -->';
 }
-
-function shortcode_inicio_columna() {
-    return '<div class="col-md-6">';
-}
-function shortcode_fin_columna() {
-    return '</div> <!-- /col-md-6 -->';
-}
+add_shortcode('finTabla', 'shortcode_fin_tablas_post');
 
 
+//  shortcode Post
 function shortcode_inicio_titulo_fila() {
     return '<tr><td><span class="titulo-table">';
 }
+add_shortcode('inicioTitulo', 'shortcode_inicio_titulo_fila');
+
 function shortcode_fin_titulo_fila() {
     return '</span></td>';
 }
+add_shortcode('finTitulo', 'shortcode_fin_titulo_fila');
 
 function shortcode_inicio_valor_fila() {
     return '<td>';
 }
+add_shortcode('inicioValor', 'shortcode_inicio_valor_fila');
+
 function shortcode_fin_valor_fila() {
     return '</td></tr>';
 }
-
-//  shortcode Page
-add_shortcode('inicioColumna', 'shortcode_inicio_columna');
-add_shortcode('finColumna', 'shortcode_fin_columna');
-//  shortcode Post
-add_shortcode('inicioTabla', 'shortcode_inicio_tablas_post');
-add_shortcode('finTabla', 'shortcode_fin_tablas_post');
-add_shortcode('inicioTitulo', 'shortcode_inicio_titulo_fila');
-add_shortcode('finTitulo', 'shortcode_fin_titulo_fila');
-add_shortcode('inicioValor', 'shortcode_inicio_valor_fila');
 add_shortcode('finValor', 'shortcode_fin_valor_fila');
 
 
-add_shortcode('redirigir', 'redirigirUsuario');
+// Metodos de redirección de usuarios:  
+function redirigirAproductos() {
+    wp_redirect( home_url('/productos') );
+}
+function redirigirAlogin() {
+    wp_redirect( home_url('/login') );
+}
+
+function irAlHome () {
+    return home_url();
+}
 
 function redirigirUsuario() {
     if ( is_user_logged_in() ) {
@@ -382,14 +382,9 @@ function redirigirUsuario() {
         wp_redirect( home_url('/login') );
     }
 }
+add_shortcode('redirigir', 'redirigirUsuario');
 
 
-function redirigirAproductos() {
-    wp_redirect( home_url('/productos') );
-}
-function redirigirAlogin() {
-    wp_redirect( home_url('/login') );
-}
 
 
 ?>
