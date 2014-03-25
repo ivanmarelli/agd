@@ -16,18 +16,16 @@
               <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura.jpg" alt="" class="img-responsive"></a></div>
               <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-ketchup.jpg" alt="" class="img-responsive"></a></div>
               <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-mostaza.jpg" alt="" class="img-responsive"></a></div>
-              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-salsa-golf.jpg" alt="" class="img-responsive"></a></div>              
-
+              <div class="col-xs-6 col-sm-6 col-md-2"><a href="" target="_blank"><img src="<?php echo IMAGES; ?>/logo-natura-salsa-golf.jpg" alt="" class="img-responsive"></a></div>
             </div>
+              <a href="http://jpginteractive.com/" target="_blank" class="pull-right" style="margin: 30px 0 0 0;">
+                <img src="<?php echo IMAGES; ?>/jpg-interactive.png" alt="JPG Interactive" class="img-responsive">
+              </a>
     </footer>
 
 
-
-
-
-
    
-  <a href="#" class="scroll-top" alt="Ir Arriba" title="Ir Arriba">Ir Arriba</a>
+<!--   <a href="#" class="scroll-top" alt="Ir Arriba" title="Ir Arriba">Ir Arriba</a> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
